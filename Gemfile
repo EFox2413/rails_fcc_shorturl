@@ -49,6 +49,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 
 # Easy setup of environment variables to keep secrets secret
-gem 'figaro'
-
 ruby "2.2.4"

@@ -53,7 +53,7 @@
 
   <div class="row" id="mini-bio">
       <div class="col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2 col-md-offset-2 col-md-2">
-        <img class="img-responsive img-rounded" alt="picture of me" src="./res/resumepic2.jpg"></img>
+        <img class="img-responsive img-rounded" alt="picture of me" src="./assets/res/resumepic2.jpg"></img>
       </div>
 
       <div class="col-sm-6 col-xs-6 col-md-6">
@@ -74,14 +74,18 @@
       <p class="text-center">Initium+ game Extension</p>
       <div id="pic-frame">
         <a href="#">
-          <img class="img-responsive img-thumbnail" alt="initium game extension" src="./res/initiumApp.png"></img>
+              <%= image_tag("res/thaiLinPan.png", 
+                            class: "img-responsive img-thumbnail center-block",
+                            :alt => "Thai Lin Pan app preview") %>
         </a>
       </div>
     </div>
     <div class="col-sm-offset-1 col-sm-2 col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-2">
       <p class="text-center">Weather Web App</p>
       <a href="http://codepen.io/EFox2413/full/LZNRaN/">
-      <img class="img-responsive img-thumbnail" alt="initium game extension" src="./res/weatherAppCrop.png"></img>
+              <%= image_tag("res/weatherAppCrop.png", 
+                            class: "img-responsive img-thumbnail center-block",
+                            :alt => "weather webapp") %>
       </a>
     </div>
   </div>
@@ -94,19 +98,25 @@
         <div class="col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2 col-md-offset-2 col-md-2">
           <p class="text-center">Thai Voice Practice App</p>
           <a href="#">
-            <img class="img-responsive img-thumbnail center-block" alt="initium game extension" src="./res/thaiLinPan.png"></img>
+              <%= image_tag("res/thaiLinPan.png", 
+                            class: "img-responsive img-thumbnail center-block",
+                            :alt => "Thai Lin Pan app preview") %>
           </a>
         </div>
         <div class="col-sm-offset-1 col-sm-2 col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-2">
           <p class="text-center">Volunteer Dev Research</p>
           <a href="#">
-            <img class="img-responsive img-thumbnail center-block" alt="volunDev preview Image" src="./res/volunDev.png"></img>
+              <%= image_tag("res/volunDev.png", 
+                            class: "img-responsive img-thumbnail center-block",
+                            :alt => "volunDev preview") %>
           </a>
         </div>
         <div class="col-sm-offset-1 col-sm-2 col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-2">
           <p class="text-center">Factorio AI Helper</p>
           <a href="#">
-            <img class="img-responsive img-thumbnail center-block" alt="Factorio App preview image" src="./res/factorioApp.png"></img>
+              <%= image_tag("res/factorioApp.png", 
+                            class: "img-responsive img-thumbnail center-block",
+                            :alt => "factorio app preview") %>
           </a>
         </div>
     </div>
