@@ -21,6 +21,10 @@ class WelcomeController < ApplicationController
     end
 
     def getHeader
-        render json: { ipaddress: nil, language: nil, software: nil }
+        ip = request.remote_ip
+        lang = request.env["HTTP_ACCEPT_LANGUAGE"]
+        software = request.env["REMOTE_HOST"]
+
+        render json: { ipaddress: ip, language: lang, software: software}
     end
 end
