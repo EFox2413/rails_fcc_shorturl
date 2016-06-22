@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-  get 'welcome/main'
 
-  get 'welcome/index'
+  root 'welcome#index'
+  get 'factorio', to: 'welcome#factorio'
+  get 'initium+', to: 'welcome#initium+'
+  get 'weather', to: 'welcome#weather'
+  get 'thaiLinPan', to: 'welcome#thaiLinPan'
+  get 'volunDev', to: 'welcome#volunDev'
+  get 'portfolio', to: 'welcome#portfolio'
+  get 'timestamp', to: 'welcome#timestamp'
+  get 'timestamp/:time', to: 'welcome#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root 'welcome#index'
-get 'main.css' => 'welcome#main'
-
-
+  #   root 'welcome#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
