@@ -19,4 +19,8 @@ class WelcomeController < ApplicationController
             render json: { unix: nil, natural: nil}
         end
     end
+
+    def getHeader
+        render json: { ipaddress: nil, language: nil, software: nil }
+    end
 end

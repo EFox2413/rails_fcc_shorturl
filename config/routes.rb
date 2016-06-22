@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   get 'thaiLinPan', to: 'welcome#thaiLinPan'
   get 'volunDev', to: 'welcome#volunDev'
   get 'portfolio', to: 'welcome#portfolio'
+
   get 'timestamp', to: 'welcome#timestamp'
   get 'timestamp/:time', to: 'welcome#create'
+
+  get 'whoami', to: 'welcome#getHeader'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
