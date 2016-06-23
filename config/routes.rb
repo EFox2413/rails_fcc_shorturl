@@ -24,9 +24,9 @@ Rails.application.routes.draw do
 
   #fcc backend url shortener microservice
   # =>create new shortened link
-  get 'newShLink/:url', to: 'shortURL#create'
+  get 'newShLink/:url', to: 'shorturl#create'
   # =>forward from shortened link to reference
-  get 'l/:id', to: 'shortURL#forward'
+  get 'l/:id', to: 'shorturl#forward'
 
   #fcc backend image search abstraction layer
   get 'imageSearch', to: 'search#main'
