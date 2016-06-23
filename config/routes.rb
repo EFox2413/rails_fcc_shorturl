@@ -1,17 +1,42 @@
 Rails.application.routes.draw do
 
+  #base index page
   root 'welcome#index'
+
+  #independent projects
   get 'factorio', to: 'welcome#factorio'
   get 'initium+', to: 'welcome#initium+'
-  get 'weather', to: 'welcome#weather'
   get 'thaiLinPan', to: 'welcome#thaiLinPan'
   get 'volunDev', to: 'welcome#volunDev'
+
+  #fcc frontend weatherApp
+  get 'weather', to: 'welcome#weather'
+
+  #fcc frontend portfolio
   get 'portfolio', to: 'welcome#portfolio'
 
+  #fcc backend timestamp microservice
   get 'timestamp', to: 'welcome#timestamp'
   get 'timestamp/:time', to: 'welcome#create'
 
+  #fcc backend getHeader
   get 'whoami', to: 'welcome#getHeader'
+
+  #fcc backend url shortener microservice
+  # =>create new shortened link
+  get 'newShLink/:url', to: 'shortURL#create'
+  # =>forward from shortened link to reference
+  get 'l/:id', to: 'shortURL#forward'
+
+  #fcc backend image search abstraction layer
+  get 'imageSearch', to: 'search#main'
+  get 'imageSearch/:query', to: 'search#create'
+  
+  #fcc backend file size shower
+  # =>submit a file form view
+  get 'filesize', to: 'filesize#create'
+  # =>show filesize of submitted file
+  get 'filesize/show', to: 'filesize#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
